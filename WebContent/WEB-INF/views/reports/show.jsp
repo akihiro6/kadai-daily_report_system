@@ -35,6 +35,14 @@
                                 <fmt:formatDate value="${report.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
                             </td>
                         </tr>
+                        <tr>
+                            <th>出勤時間</th>
+                            <td><c:out value="${report.commuting_time}" /></td>
+                        </tr>
+                        <tr>
+                            <th>退勤時間</th>
+                            <td><c:out value="${report.attendance_time}" /></td>
+                        </tr>
                     </tbody>
                 </table>
 

@@ -61,6 +61,12 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "commuting_time", length = 255, nullable = false)
+    private String commuting_time;
+
+    @Column(name = "attendance_time", length = 255, nullable = false)
+    private String attendance_time;
+
     public Integer getId() {
         return id;
     }
@@ -116,4 +122,21 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+    public String getCommuting_time() {
+        return commuting_time;
+    }
+
+    public void setCommuting_time(String commuting_time) {
+        this.commuting_time = commuting_time;
+    }
+
+    public String getAttendance_time() {
+        return attendance_time;
+    }
+
+    public void setAttendance_time(String attendance_time) {
+        this.attendance_time = attendance_time;
+    }
+
 }

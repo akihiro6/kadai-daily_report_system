@@ -58,6 +58,9 @@ public class ReportsCreateServlet extends HttpServlet {
             r.setCreated_at(currentTime);
             r.setUpdated_at(currentTime);
 
+            r.setCommuting_time(request.getParameter("commuting_time"));
+            r.setAttendance_time(request.getParameter("attendance_time"));
+
             List<String> errors = ReportValidator.validate(r);
             if(errors.size() > 0) {
                 em.close();
